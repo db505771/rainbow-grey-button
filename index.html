@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Dark Gray Button with Border</title>
+  <title>Near Black Button with Thin Border</title>
   <style>
     html, body {
       margin: 0 !important;
@@ -30,24 +30,24 @@
       /* Smooth rounded corners */
       border-radius: 22px;
 
-      /* Solid Dark Gray Background */
-      background-color: #1f2937;
+      /* Solid Near-Black Neutral Dark Gray (No blue tint) */
+      background-color: #121212;
 
-      /* Solid Mid-Gray Border */
-      border: 2px solid #6b7280;
+      /* Ultra-thin 0.5px Mid-Gray Border */
+      border: 0.5px solid #555555;
 
       box-shadow: none;
 
       /* Touch Feedback */
-      transition: transform 0.12s ease, background-color 0.12s ease, border-color 0.12s ease;
+      transition: transform 0.12s ease, background-color 0.12s ease;
       -webkit-tap-highlight-color: transparent;
     }
 
-    /* Slightly darkens surface & brightens border on press for touch feedback */
+    /* Tactile press state */
     .dark-gray-button:active {
       transform: scale(0.985);
-      background-color: #111827;
-      border-color: #9ca3af;
+      background-color: #000000;
+      border-color: #777777;
     }
 
     .dark-gray-button:focus {
