@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Solid Gray Button</title>
+  <style>
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      background: transparent !important;
+      overflow: hidden;
+    }
+
+    .solid-gray-button {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      display: block;
+      cursor: pointer;
+
+      /* Smooth rounded corners */
+      border-radius: 22px;
+
+      /* 100% Opaque Solid Gray Background */
+      background-color: #374151;
+
+      border: none;
+      box-shadow: none;
+
+      /* Touch Feedback */
+      transition: transform 0.12s ease, background-color 0.12s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Slightly darkens on press for tactile feedback */
+    .solid-gray-button:active {
+      transform: scale(0.985);
+      background-color: #1f2937;
+    }
+
+    .solid-gray-button:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="solid-gray-button" type="button" onclick="buttonPressed()"></button>
+
+  <script>
+    function buttonPressed() {
+      // Your action here
+    }
+  </script>
+</body>
+</html>
